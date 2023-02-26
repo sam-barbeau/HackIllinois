@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>this is important</title>
-        <script>
-            const buttonA = document.querySelector('#button_A');
-            const headingA = document.querySelector('#heading_A');
-            
-            buttonA.onclick = () => {
-              const name = prompt('What is your name?');
-              headingA.textContent = `Welcome ${name}`;
-            }
-        </script>
+        <style>
+            .header {text-align:center; border-style:double}
+            .subtitle {text-align:center; border-style: double}
+            p {
+			    font-size:large
+		    }
+        </style>
+        <title>Health Center</title>
     </head>
     <body>
-        <h1>PROTEIN TRACKER</h1> <br>
-        <form action="/action_page.php">
-            <label for="fname">Height (inches):</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Weight (lbs):</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-        </form>
-        <button type="button">Click Me!</button>
-    </body> 
-    <a href="file:///Users/sambarbeau/HackIllinois_beginner/src/new_page.html">Home</a></p>
-        <script>
-            let total = 0;
-            function add(value) {
-                total += value;
-            }
-        </script>
-        <form action="/action_page.php">
-            <label for="fname">Protein added (grams):</label>
-            <input type="text" id="fname" name="fname"><br><br>
-        </form>
-        add(name);
+        <h1 class=header>Health Center</h1> <br>
+        <div style="width: 50%; float:left">
+            <body topmargin=30px; leftmargin=50px; rightmargin=50px></body>
+            <h2 class=subtitle><a href="/Users/sambarbeau/HackIllinois_beginner/src/sleep_tracker.html">Sleep Tracker</a></h2>
+            <p> <br>
+                Sleep is very important, yet many people do not get enough of it. In fact,
+                50% of college students report daytime sleepiness, and 70% report insufficient 
+                sleep. The GPAS of students receiving 9+ hours of sleep per night were significantly
+                higher (3.24) than those of students receiving 6 or fewer hours of sleep per night (2.74).
+                Use <a href="/Users/sambarbeau/HackIllinois_beginner/src/sleep_tracker.html">this</a> tracker 
+                to log your sleep throughout the week!
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <a href="/Users/sambarbeau/HackIllinois_beginner/src/sources.html">sources</a>
+            </p>
+        </div>
+        <div style="width: 50%; float:right">
+            <h2 class=subtitle><a href="/Users/sambarbeau/HackIllinois_beginner/src/protein_tracker.html">Protein Tracker</a></h2>
+            <p><br>
+                Many athletes, bodybuilders, and those focusing on good nutritional health track protein consumption.
+                According to Mayo Clinic The recommended amount of daily protein intake to prevent deficiency for an average 
+                adult is 0.8 grams per kilogram of body weight. Use <a href="/Users/sambarbeau/HackIllinois_beginner/src/protein_tracker.html">this</a> 
+                tracker to help you track your protein intake throughout the day. Note, if you exercise or if you are above the 
+                ages of 40-50 your daily protein needs increase in order to support muscle growth and prevent losing muscle mass.</p>
+        </div>
     </body>
-    <a href="file:///Users/sambarbeau/TESTING%20hack/src/new_page.html">Home</a></p>
-    <body style="background-color:rgb(106, 106, 112);">
+    <body style="background-color:rgba(211, 216, 169, 0.3)";
+          topmargin=30px; leftmargin=50px; rightmargin=50px;></body>
 </html>
